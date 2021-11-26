@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej3_Antonio_Ruescas</title>
+    
+    <!-- Adaptamos diseño para móviles, las librerias necesarias y vinculamos la hoja de estilos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <!-- Barra del navbar -->
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top opacidad">
+            <div class="d-flex centrar">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                    <a class="navbar-brand" href="#">Menu</a>
+                </button>
+                <div class="collapse navbar-collapse centrar" id="collapsibleNavbar">
+                    <ul class="navbar-nav w-100 d-flex justify-content-center link-color">
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" href="#">Servicios</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" href="contacto.html" target="_blank">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container cajas-formulario">
+        <!-- Hacemos responsive el diseño de los iconos -->
+        <div class="row justify-content-center iconos">
+            <section class="col-12 col-sm-4 col-lg-4"><a href="https://g.page/escuelacevmadrid?share"><img
+                        src="maps.jpg" class="icon"></a>
+            </section>
+            <section class="col-12 col-sm-4 col-lg-4"><a href="https://www.facebook.com"><img src="facebook.jpg"
+                        class="icon"></a>
+            </section>
+            <section class="col-12 col-sm-4 col-lg-4"><a href="https://www.google.com"><img src="google.jpg"
+                        class="icon"></a>
+            </section>
+        </div>
+        <div class="formulario">
+            <!-- Formulario de contacto -->
+            <form method="post" action="http://www.cursos-diseno.es/mi-mail.php">
+                <div class="row justify-content-center">
+                    <section class="form-group col-11 col-sm-5 col-lg-5 ">
+                        <label class="texto-formulario">Email</label>
+                        <input type="email" name="email" placeholder="Introduzca su email" required
+                            style="width: 100%;">
+                    </section>
+                    <section class="form-group col-11 col-sm-5 col-lg-5 texto-formulario">
+                        <label class="texto-formulario">Teléfono</label>
+                        <input type="text" name="numero" placeholder="Introduzca su número de teléfono (opcional)"
+                            required style="width: 100%;">
+                    </section>
+                    <section class="form-group col-11 col-sm-10 col-lg-10 texto-formulario">
+                        <label class="texto-formulario">Mensaje</label>
+                        <textarea class="form-control" rows="3" id="comment"></textarea>
+                        <input type="submit" value="ENVIAR" class="enviar">
+                        <input type="hidden" name="destinatario" value="antonio_ruescas@hotmail.com">
+                    </section>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Introducimos el texto del footer -->
+        <div class="container-footer">
+            <p>Calle Bomba 16. 50010 Saratoga. Tfno: 666 999 666. Fax: 999 666 999. Email: email@hola.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>

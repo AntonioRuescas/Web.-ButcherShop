@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej3_Antonio_Ruescas</title>
+
+    <!-- Adaptamos diseño para móviles, las librerias necesarias y vinculamos la hoja de estilos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top opacidad">
+            <!-- Barra del navbar -->
+            <div class="d-flex centrar">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                    <a class="navbar-brand" href="#">Menu</a>
+                </button>
+                <div class="collapse navbar-collapse centrar" id="collapsibleNavbar">
+                    <ul class="navbar-nav w-100 d-flex justify-content-center link-color">
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" href="#">Servicios</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" href="contacto.html" target="_blank">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Creamos los textos que van al inicio de la maquetación -->
+            <h1>PRESENTACIÓN</h1>
+            <section>
+                <p>En Carnicerías ACME ponemos a su disposición las mejores carnes, embutidos y platos preparados,
+                    entre
+                    otras
+                    delicias gourmet. Si tienen un evento y quieren deleitar a sus invitados con unos productos
+                    sanos,
+                    frescos y
+                    sabrosos, contacten con nosotros.</p>
+            </section>
+            <section>
+                <h2>Reparto a domicilio</h2>
+                <p>Realicen su pedido hoy mismo y mañana lo tendrán listo en su domicilio.</p>
+            </section>
+            <section class="ultima-seccion">
+                <h2>Corte tradicional</h2>
+                <p>No tenemos bandejes preparadas. Nuestro corte es artesano y profesional.</p>
+            </section>
+        </div>
+
+        <div class="row justify-content-center">
+            <!-- Creamos el diseño responsive de las imágenes y los textos -->
+            <section class="col-9 col-sm-6 col-lg-3">
+                <h3>Calidad</h3>
+                <img src="carne.jpg" alt="">
+                <p>Carne de calidad de los valles pirenáicos. Con las mejores garantías de sanidad y sabor.</p>
+            </section>
+            <section class="col-9 col-sm-6 col-lg-3">
+                <h3>Servicio 24h</h3>
+                <img src="entrega.jpg" alt="">
+                <p>En nuestro transporte refigerado garantizamos que cumpliremos en 24h con nuestros compromisos.</p>
+            </section>
+            <section class="col-9 col-sm-6 col-lg-3">
+                <h3>Restauración</h3>
+                <img src="restaurantes.jpg" alt="">
+                <p>Servimos a los mejores restaurantes de Zaragoza. Si regentas un local de restauración llámanos.</p>
+            </section>
+            <section class="col-9 col-sm-6 col-lg-3">
+                <h3>Charcutería</h3>
+                <img src="charcuteria.jpg" alt="">
+                <p>Los mejores ejemplares de jamón ibérico y embutidos tradicionales. Especialistas en
+                    charcutería.</p>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        <!-- Introducimos el texto del footer -->
+        <div class="container-footer">
+            <p>Calle Bomba 16. 50010 Saratoga. Tfno: 666 999 666. Fax: 999 666 999. Email: email@hola.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+/* ************** RESET ************** */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif, "Times New Roman", Times, serif;
+}
+/* ************** VARIABLES ************** */
+html {
+  --principal: black;
+  --secundario: white;
+  --formulario: grey;
+}
+/* ************** ETIQUETAS ************** */
+h1 {
+  margin-top: 45px;
+  font-weight: bold;
+  font-size: 20px;
+}
+h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+p {
+  font-size: 12px;
+}
+h1,h2,h3,p {
+  text-align: center;
+}
+section {
+  width: 100%;
+  margin-bottom: 30px;
+}
+nav {
+  width: 100%;
+}
+a {
+  color: var(--secundario) !important;
+}
+header {
+  background-image: url(superior.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+main {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+footer {
+  background-image: url(inferior.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+/* ************** CLASES ************** */
+.enviar {
+  position: absolute;
+  right: 20px;
+  margin-top: 5px;
+  background: var(--principal);
+  color: var(--secundario);
+  border: var(--secundario) 1px solid;
+  padding: 5px;
+}
+.cajas-formulario {
+  padding: 0px;
+}
+.ultima-seccion {
+  padding-bottom: 50px;
+}
+.container-footer {
+  width: 100%;
+  background: var(--principal);
+  position: absolute;
+  bottom: 0;
+  color: var(--secundario);
+  text-align: center;
+  padding: 10px 10px 0px 10px;
+}
+.formulario {
+  width: 100%;
+  height: 350px;
+  padding: 30px;
+  background: var(--formulario);
+}
+.opacidad {
+  filter: opacity(0.9);
+  background-color: var(--principal);
+}
+.icon {
+  width: 30%;
+}
+.iconos {
+  text-align: center;
+  padding: 50px;
+}
+.texto-formulario {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+/* ************** RESPONSIVE ************** */
+@media screen and (min-width: 576px) {
+  main {
+    width: 70%;
+    background: var(--secundario);
+    margin-top: -50px;
+    margin-bottom: -50px;
+    position: relative;
+  }
+  .centrar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .cajas-formulario {
+    width: 70%;
+  }
+  .formulario {
+    max-height: 300px;
+  }
+}
